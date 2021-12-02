@@ -31,16 +31,8 @@ module Rorbackendangular13
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    config.action_cable.mount_path = '/websocket'
-    
+
     # Don't generate system test files.
     config.generators.system_tests = nil
-
-    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :patch, :options]
-      end
-    end
   end
 end
