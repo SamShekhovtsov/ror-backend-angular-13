@@ -12,8 +12,8 @@ The API provides CRUD endpoints:
 
 * Get particular blog using Blog ID: /blogs/\[id\].json for example: https://ror-backend-angular-13.herokuapp.com/blogs/1.json
 
-* Update blog: UPDATE to Url /blogs/ {"id":1,"title":"Blog one updated","content":"Blog 1 Test Sem updated"}
+* Update blog: UPDATE to Url /blogs/\[id\] {"id":1,"title":"Blog one updated","content":"Blog 1 Test Sem updated"}
 
 * Create Blog POST to Url /blogs/ {"title":"Create new Blog","content":"Create new content"}
 
-* Delete Blog DELETE to Url /blogs/ {"id":1}
+* Delete Blog DELETE to Url /blogs/\[id\] {"id":1}
