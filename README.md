@@ -4,7 +4,7 @@ This is Demo API built by Semen Shekhovtsov for Angular 13 frontend
 
 Demo API has root Url: [Ruby on Rails backend](https://ror-backend-angular-13.herokuapp.com "Ruby on Rails backend")   
 
-Blog model is following { "id": integer "title": string "content": string } , for example: {"id":1,"title":"Blog one","content":"Blog 1 Test Sem"}
+Blog model is following { "id": integer, "title": string, "content": string } , for example: {"id":1,"title":"Blog one","content":"Blog 1 Test Sem"}
 
 The API provides CRUD endpoints:
 
