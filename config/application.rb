@@ -35,5 +35,12 @@ module Rorbackendangular13
     
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :patch, :options]
+      end
+    end
   end
 end
