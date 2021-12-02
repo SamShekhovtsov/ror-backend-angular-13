@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Demo API built by Semen Shekhovtsov for Angular 13 frontend
 
-Things you may want to cover:
+Demo API has root Url: [Ruby on Rails backend](https://ror-backend-angular-13.herokuapp.com "Ruby on Rails backend")   
 
-* Ruby version
+Blog model is following { "id": integer "title": string "content": string } , for example: {"id":1,"title":"Blog one","content":"Blog 1 Test Sem"}
 
-* System dependencies
+The API provides CRUD endpoints:
 
-* Configuration
+* List of all Blogs: [List of blogs](https://ror-backend-angular-13.herokuapp.com/blogs.json "blogs list")
 
-* Database creation
+* Get particular blog using Blog ID: /blogs/\[id\].json for example: https://ror-backend-angular-13.herokuapp.com/blogs/1.json
 
-* Database initialization
+* Update blog: UPDATE to Url /blogs/ {"id":1,"title":"Blog one updated","content":"Blog 1 Test Sem updated"}
 
-* How to run the test suite
+* Create Blog POST to Url /blogs/ {"title":"Create new Blog","content":"Create new content"}
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Delete Blog DELETE to Url /blogs/ {"id":1}
